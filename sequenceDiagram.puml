@@ -1,0 +1,12 @@
+@startuml sequenceDiagram
+Person -> Student: Person could be a student
+Person --> Teacher: Person could be a teacher
+Person --> name: Every person has a name
+name --> Teacher: Returns name if teacher
+name --> Student: returns name if student
+Student -> Grade: Student can access grade
+Student --> GPA: Student can access GPA
+Teacher --> Gradebook: Teacher can access gradebook
+Gradebook --> Grade: Gradebook returns a grade
+Gradebook --> GPA: Gradebook returns a GPA
+@enduml
